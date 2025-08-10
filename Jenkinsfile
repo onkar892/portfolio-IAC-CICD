@@ -7,6 +7,11 @@ pipeline {
         ARM_TENANT_ID = credentials('azure-tenant-id')
     }
     stages {
+        stage('Verify Terraform') {
+            steps {
+                sh 'terraform -v'
+            }
+         }
         stage('Terraform Init'){
             steps {
                 sh 'terraform init'
