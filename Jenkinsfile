@@ -11,20 +11,26 @@ pipeline {
             steps {
                 sh 'terraform -v'
             }
-         }
+        }
         stage('Terraform Init'){
             steps {
-                sh 'terraform init'
+                dir('terraform') {
+                    sh 'terraform init'
+                }
             }
         }
         stage('Terraform Plan'){
             steps {
-                sh 'terraform plan'
+                dir('terraform') {
+                    sh 'terraform plan'
+                }
             }
         }
-        stage('Terraform Apply'){
+        stage('Terraform Apply') {
             steps {
-                sh 'terraform apply -auto-approve'
+                dir('terraform') {
+                    sh 'terraform apply -auto-approve'
+                }
             }
         }
     }
