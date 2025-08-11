@@ -10,13 +10,7 @@ Automated provisioning of an Azure Storage Account using **Terraform** executed 
 
 ## 🗂️ Project Structure
 
-├── terraform/
-│   ├── main.tf
-│   ├── provider.tf
-│   └── variables.tf
-├── Jenkinsfile
-├── README.md
-└── .gitignore
+<pre> ```plaintext ├── terraform/ │ ├── main.tf │ ├── provider.tf │ └── variables.tf ├── Jenkinsfile.groovy ├── README.md └── .gitignore ``` </pre>
 
 🔐 Jenkins Credentials
 | ID                      | Description              |
