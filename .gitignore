@@ -1,0 +1,35 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+
+# Local IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.bak
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jenkins logs and workspace
+*.log
+secrets/
+workspace/
+
+# Other common ignores
+*.env
