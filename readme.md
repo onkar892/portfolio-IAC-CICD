@@ -8,10 +8,6 @@ Automated provisioning of an Azure Storage Account using **Terraform** executed 
 - Jenkins pipeline triggers init → plan → apply
 - Azure Service Principal handles authentication
 
-## 🗂️ Project Structure
-
-<pre> ```plaintext ├── terraform/ │ ├── main.tf │ ├── provider.tf │ └── variables.tf ├── Jenkinsfile.groovy ├── README.md └── .gitignore ``` </pre>
-
 🔐 Jenkins Credentials
 | ID                      | Description              |
 | ----------------------- | ------------------------ |
